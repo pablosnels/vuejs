@@ -1,0 +1,960 @@
+[
+    {
+      "cate": 1,
+      "desc": "Aceite",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "1.22",
+      "orden": 2
+    },
+    {
+      "cate": 1,
+      "desc": "Guisantes",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "1.42",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Atun (3 latas)",
+      "cant": 3,
+      "mensual": 2,
+      "precio": "1.50",
+      "orden": 3
+    },
+    {
+      "cate": 1,
+      "desc": "Azucar",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "0.76",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Arroz",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "1.05",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Yerba",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "2.65",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Aceitunas 1/4",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "2.00",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Cafe",
+      "cant": 4,
+      "mensual": 2,
+      "precio": "1.20",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Te",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "0.99",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Nesquik",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "2.72",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Fideos Macarrones",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "0.70",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Fideos Moñitos",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "1.00",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Fideos Tallarin",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "1.15",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Fideos Tirabuson",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "1.00",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Harina",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "0.42",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Huevos * 24",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "2.29",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Mayonesa",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "1.40",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Zumo Naranja Pulpa",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "0.90",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Ketchup",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "1.35",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Mermeladas",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "0.94",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Pan de molde x28",
+      "cant": 4,
+      "mensual": 2,
+      "precio": "0.96",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Pan Rallado kg",
+      "cant": 3,
+      "mensual": 2,
+      "precio": "0.88",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Tomate Frito x810g",
+      "cant": 3,
+      "mensual": 2,
+      "precio": "1.00",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Pure",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Cereales Para el Yogurh",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "2.00",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Oregano",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "0.70",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Pimienta",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "1.00"
+    },
+    {
+      "cate": 1,
+      "desc": "Sal Fina",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "1.00",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Sal gruesa",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "1.00",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Provenzal",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "1.21",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Sazonadores",
+      "cant": 4,
+      "mensual": 2,
+      "precio": "0.81",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "Champignones",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 1,
+      "desc": "BIzcochuelo Royal",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 2,
+      "desc": "Tang",
+      "cant": 16,
+      "mensual": 2,
+      "precio": "0.41",
+      "orden": 1
+    },
+    {
+      "cate": 3,
+      "desc": "Bifes cerdo",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 3,
+      "desc": "Carne Picada 1Kg",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "4.87",
+      "orden": 1
+    },
+    {
+      "cate": 3,
+      "desc": "Cerdo para Milanesas",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "4.90",
+      "orden": 1
+    },
+    {
+      "cate": 3,
+      "desc": "Pavo para Milanesas",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "6.50",
+      "orden": 1
+    },
+    {
+      "cate": 3,
+      "desc": "Pechugas de pollo",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "5.50",
+      "orden": 1
+    },
+    {
+      "cate": 3,
+      "desc": "Salchichas x 6",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "1.18",
+      "orden": 1
+    },
+    {
+      "cate": 3,
+      "desc": "Hamburguesas carne",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "2.55",
+      "orden": 1
+    },
+    {
+      "cate": 4,
+      "desc": "Acelga congelada",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "1.19"
+    },
+    {
+      "cate": 4,
+      "desc": "Espinaca congelada",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "1.19",
+      "orden": 1
+    },
+    {
+      "cate": 4,
+      "desc": "Papas fritas 1kg",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "1.05",
+      "orden": 1
+    },
+    {
+      "cate": 4,
+      "desc": "Pizza V/Sabores Gde",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "2.39",
+      "orden": 1
+    },
+    {
+      "cate": 4,
+      "desc": "Tortilla de cebolla",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "1.60",
+      "orden": 1
+    },
+    {
+      "cate": 4,
+      "desc": "Tapas Empan Cocinera ",
+      "cant": 4,
+      "mensual": 2,
+      "precio": "0.77",
+      "orden": 1
+    },
+    {
+      "cate": 4,
+      "desc": "Pizza Moz Ch (x2)g u. hp",
+      "cant": 3,
+      "mensual": 2,
+      "precio": "2.54",
+      "orden": 1
+    },
+    {
+      "cate": 4,
+      "desc": "Helados Mini",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "2.00",
+      "orden": 1
+    },
+    {
+      "cate": 5,
+      "desc": "Jamon Cocido 500",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "2.00",
+      "orden": 1
+    },
+    {
+      "cate": 5,
+      "desc": "Queso Rallado",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 6,
+      "desc": "Flanes x 6 ",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "0.70",
+      "orden": 1
+    },
+    {
+      "cate": 6,
+      "desc": "Leches Unidad",
+      "cant": 18,
+      "mensual": 2,
+      "precio": "0.61",
+      "orden": 1
+    },
+    {
+      "cate": 6,
+      "desc": "Lechitas x 6",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "1.50",
+      "orden": 1
+    },
+    {
+      "cate": 6,
+      "desc": "Manteca",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "1.25",
+      "orden": 1
+    },
+    {
+      "cate": 6,
+      "desc": "Masa brisa pack *2",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "2.49",
+      "orden": 1
+    },
+    {
+      "cate": 6,
+      "desc": "Queso Fresco Lonchas",
+      "cant": 6,
+      "mensual": 2,
+      "precio": "1.70",
+      "orden": 1
+    },
+    {
+      "cate": 6,
+      "desc": "Queso Untable",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "1.00",
+      "orden": 1
+    },
+    {
+      "cate": 6,
+      "desc": "Dulce de leche",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 6,
+      "desc": "Yogurth Bebible",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "1.22",
+      "orden": 1
+    },
+    {
+      "cate": 6,
+      "desc": "Crema",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "2.10",
+      "orden": 1
+    },
+    {
+      "cate": 6,
+      "desc": "Danonino p/llevar *4",
+      "cant": 3,
+      "mensual": 2,
+      "precio": "1.79",
+      "orden": 1
+    },
+    {
+      "cate": 6,
+      "desc": "Yogurths GRiego con azucar",
+      "cant": 3,
+      "mensual": 2,
+      "precio": "1.09",
+      "orden": 1
+    },
+    {
+      "cate": 6,
+      "desc": "Yogurths GRiego sin azucar",
+      "cant": 3,
+      "mensual": 2,
+      "precio": "1.09",
+      "orden": 1
+    },
+    {
+      "cate": 7,
+      "desc": "AirWick Repuesto",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 7,
+      "desc": "Desinfectante Baño",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 7,
+      "desc": "Desodorante Ambiente",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 7,
+      "desc": "Filtro Brita para Agua",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 7,
+      "desc": "Jabon wipp 2170cc 35 LAV",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "6.99",
+      "orden": 1
+    },
+    {
+      "cate": 7,
+      "desc": "Jabon ropa hipoalerg",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 7,
+      "desc": "Lavavajillas",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "0.99",
+      "orden": 1
+    },
+    {
+      "cate": 7,
+      "desc": "Lejia + deterg",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "1.20",
+      "orden": 1
+    },
+    {
+      "cate": 7,
+      "desc": "Lejia 2lt.",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "1.20",
+      "orden": 1
+    },
+    {
+      "cate": 7,
+      "desc": "Quitamanchas ",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 7,
+      "desc": "Limpiador Piso",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 7,
+      "desc": "Papel baño (x6)",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "1.98",
+      "orden": 1
+    },
+    {
+      "cate": 7,
+      "desc": "Papel Cocina",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "1.80",
+      "orden": 1
+    },
+    {
+      "cate": 7,
+      "desc": "Repuesto Mosquitos",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 7,
+      "desc": "Suavisante Ropa",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 7,
+      "desc": "Esponja Cocina",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 7,
+      "desc": "Limpia Vidrios",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 7,
+      "desc": "Bolsas de basura ",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "1.00",
+      "orden": 1
+    },
+    {
+      "cate": 7,
+      "desc": "LustraMueble",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 8,
+      "desc": "Panes de cereal",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "1.16",
+      "orden": 1
+    },
+    {
+      "cate": 8,
+      "desc": "Bizcochos",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "1.15",
+      "orden": 1
+    },
+    {
+      "cate": 8,
+      "desc": "Barra de pan",
+      "cant": 10,
+      "mensual": 2,
+      "precio": "0.40",
+      "orden": 1
+    },
+    {
+      "cate": 8,
+      "desc": "Tostadas",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 8,
+      "desc": "Pan de Hamburguesas",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 8,
+      "desc": "Pan de Pancho",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "0.75",
+      "orden": 1
+    },
+    {
+      "cate": 8,
+      "desc": "Quelis",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "2.09",
+      "orden": 1
+    },
+    {
+      "cate": 8,
+      "desc": "Palmeritas",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "0.85",
+      "orden": 1
+    },
+    {
+      "cate": 9,
+      "desc": "Durex",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "9.00",
+      "orden": 1
+    },
+    {
+      "cate": 9,
+      "desc": "Alcohol",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 9,
+      "desc": "Jabon tocador",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "1.85",
+      "orden": 1
+    },
+    {
+      "cate": 9,
+      "desc": "Jabon ducha",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "1.50",
+      "orden": 1
+    },
+    {
+      "cate": 9,
+      "desc": "Desodorante ",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "1.50",
+      "orden": 1
+    },
+    {
+      "cate": 9,
+      "desc": "Desodorante  W",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 9,
+      "desc": "Tintura",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 9,
+      "desc": "Pañales Dafy",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "15.00",
+      "orden": 1
+    },
+    {
+      "cate": 9,
+      "desc": "Compresas ",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 9,
+      "desc": "Pasta dientes",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 9,
+      "desc": "Protectores x 50",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 9,
+      "desc": "Tampones Evax",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 9,
+      "desc": "Toallitas Dafy",
+      "cant": 3,
+      "mensual": 2,
+      "precio": "1.55",
+      "orden": 1
+    },
+    {
+      "cate": 9,
+      "desc": "Toallitas Famke",
+      "cant": 3,
+      "mensual": 2,
+      "precio": "1.55",
+      "orden": 1
+    },
+    {
+      "cate": 9,
+      "desc": "Champu",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 9,
+      "desc": "Acondicionador",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 9,
+      "desc": "Listerine 250",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "",
+      "orden": 1
+    },
+    {
+      "cate": 9,
+      "desc": "Algodon",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "1.20",
+      "orden": 1
+    },
+    {
+      "cate": 10,
+      "desc": "Calabacin Blanco",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "1.80",
+      "orden": 1
+    },
+    {
+      "cate": 10,
+      "desc": "Banana",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "1.95",
+      "orden": 1
+    },
+    {
+      "cate": 10,
+      "desc": "Ajo",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "1.35",
+      "orden": 1
+    },
+    {
+      "cate": 10,
+      "desc": "Cebolla Verdeo",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "1.00",
+      "orden": 1
+    },
+    {
+      "cate": 10,
+      "desc": "Papas",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "0.79",
+      "orden": 1
+    },
+    {
+      "cate": 10,
+      "desc": "Tomate",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "1.99",
+      "orden": 1
+    },
+    {
+      "cate": 10,
+      "desc": "Lechuga",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "1.50",
+      "orden": 1
+    },
+    {
+      "cate": 10,
+      "desc": "Cebollas",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "0.60",
+      "orden": 1
+    },
+    {
+      "cate": 10,
+      "desc": "Zanahoria",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "1.75",
+      "orden": 1
+    },
+    {
+      "cate": 10,
+      "desc": "Pimiento",
+      "cant": 2,
+      "mensual": 2,
+      "precio": "0.72",
+      "orden": 1
+    },
+    {
+      "cate": 10,
+      "desc": "Manzanas",
+      "cant": 1,
+      "mensual": 2,
+      "precio": "1.39",
+      "orden": 1
+    }
+   ]
