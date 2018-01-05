@@ -52,7 +52,7 @@ export default {
     },
     irAddCategoria (cateSelected) {
       if (cateSelected > 0) {
-        this.$router.push({ name: 'AddProductosPorCate', params: { cate: cateSelected } })
+        this.$router.push({ name: 'AddProductosPorCate', params: { cate: cateSelected } }) 
       }
     }
   },
