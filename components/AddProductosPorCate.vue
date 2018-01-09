@@ -50,8 +50,8 @@ export default {
   methods: {
     volver () {
       this.$router.push({
-        name: 'VistaPrincipal'
-        // params: {cate: this.cate}
+        name: 'VistaPrincipal',
+        params: {cate: this.cate}
       })
     },
     cancelar () {

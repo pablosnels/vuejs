@@ -1,29 +1,48 @@
 <template lang="html">
   <div>
-   <a  class="list-group-item list-group-item-action fino" >
+      <a  class="list-group-item list-group-item-action fino" >
 
-  <span v-bind:class="{'text-muted': productoActual.cant===0,'text-info': true}" >{{productoActual.desc}}</span> 
-   <i aria-hidden="true" @click="eliminar(productoActual)" class="fa fa-trash text-info pull-right"></i>
+      <span v-bind:class="{'text-muted': productoActual.cant===0,'text-info': true}" >{{productoActual.desc}}</span> 
+      <i aria-hidden="true" v-b-modal.myModal1 @click="modalShow = !modalShow" class="fa fa-trash text-info pull-right"></i>
+      
+      <div class="container sinPadding bot3em">
+        <div class="row sinPadding">
+          <div class="col-4 sinPadding">
+              <div class="small text-info">Actual: {{productoActual.cant}}</div>
+              <cp-botonesMasMenos  v-on:onPlus="clickMasCant(productoActual)" v-on:onMinus="clickMenosCant(productoActual)"></cp-botonesMasMenos>
+          </div>
+          <div class="col-4 sinPadding">
+              <div class="small  text-info">Mes: {{productoActual.mensual}}</div>
+              <cp-botonesMasMenos v-on:onPlus="clickMasMensual(productoActual)" v-on:onMinus="clickMenosMensual(productoActual)"></cp-botonesMasMenos>
+          </div>
+          <div class="col-4 sinPadding">
+              <div class="small  text-info">Orden: {{productoActual.orden}}</div>
+              <cp-botonesMasMenos :flechas=true v-on:onPlus="clickMasOrden(productoActual)" v-on:onMinus="clickMenosOrden(productoActual)"></cp-botonesMasMenos>
+          </div>
+
+        </div>
+      </div>
+
+    </a>
   
-  <div class="container sinPadding bot3em">
-    <div class="row sinPadding">
-      <div class="col-4 sinPadding">
-          <div class="small text-info">Actual: {{productoActual.cant}}</div>
-          <cp-botonesMasMenos  v-on:onPlus="clickMasCant(productoActual)" v-on:onMinus="clickMenosCant(productoActual)"></cp-botonesMasMenos>
-      </div>
-      <div class="col-4 sinPadding">
-          <div class="small  text-info">Mes: {{productoActual.mensual}}</div>
-          <cp-botonesMasMenos v-on:onPlus="clickMasMensual(productoActual)" v-on:onMinus="clickMenosMensual(productoActual)"></cp-botonesMasMenos>
-      </div>
-      <div class="col-4 sinPadding">
-          <div class="small  text-info">Orden: {{productoActual.orden}}</div>
-          <cp-botonesMasMenos :flechas=true v-on:onPlus="clickMasOrden(productoActual)" v-on:onMinus="clickMenosOrden(productoActual)"></cp-botonesMasMenos>
-      </div>
+  <b-modal    size="sm" centered  ok-title='Eliminar' v-model="modalShow">
+    <slot name="modal-title"></slot>
+    <slot name="modal-header-close"></slot>
 
-    </div>
-  </div>
+<div slot="modal-header-close"></div>
+    <div slot="modal-title  "></div>
+    <div slot="modal-footer"></div>
 
-</a>
+
+    <b-alert variant="warning" show>¿ Confirma que desea eliminar {{productoActual.desc}} ?</b-alert>
+       <div>
+      <b-button variant="info" v-on:click="confirmaEliminar(productoActual)" >Eliminar</b-button>
+      <b-button variant="outline-info" v-on:click="cancelaEliminar(productoActual)">Cancelar</b-button>
+      
+</div>
+
+    </b-modal>
+
 </div>
 </template>
  
@@ -32,6 +51,7 @@
 import BotonesMasMenos from '../MasMenos'
 import bus from '../bus'
 
+
 export default {
   name: 'cp-registroMes',
   props: ['productoActual', 'modoVista'],
@@ -39,6 +59,7 @@ export default {
   },
   data () {
     return {
+      modalShow:false
     }
   },
   methods: {
@@ -82,7 +103,15 @@ export default {
       this.CambioModelo(aProd)
     },
     eliminar (productoActual) {
-       bus.$emit('ProductoEliminar', productoActual);
+      bus.$emit('ProductoEliminar', productoActual)
+    },
+    confirmaEliminar (productoActual) {
+      console.log('consirma')
+      this.modalShow = false 
+    },
+    cancelaEliminar (productoActual) {
+      console.log('cancela')
+      this.modalShow = false
     }
   },
   components: {
@@ -111,5 +140,17 @@ export default {
     padding-bottom: 4px;
 }
 
-
+.modal-header {
+    padding: 0px;
+    border-bottom : 0px
+}
+.modal-footer {
+    padding: 0px;
+}
+.modal-content {
+  border-radius: 10px
+}
+.hr {
+  color: red
+}
 </style>

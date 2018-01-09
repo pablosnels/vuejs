@@ -28,25 +28,26 @@ export default {
       })
     },
     CambioCategoria (idCate) {
-      this.$store.state.categoriaActual = idCate
+      this.cambiarCateActual(idCate)
     },
     CambioFiltro (filtro) {
-      this.$store.commit('SET_FILTER', filtro)
+      this.cambiarFiltro(filtro)
     },
-    ...mapActions ({
-      guardarNuevoProducto : 'guardarProd',
+    ...mapActions({
+      guardarNuevoProducto: 'guardarProd',
       cargarDatos: 'cargarDatos',
-      cambiarFiltro : 'cambiarFiltro',
-      eliminarProducto : 'eliminarProducto'
+      cambiarFiltro: 'cambiarFiltro',
+      eliminarProducto: 'eliminarProducto',
+      cambiarCateActual: 'cambiarCateActual'
     }),
     GuardarSiValida (aProd) {
       this.guardarNuevoProducto(aProd)
     },
-    Guardar (){
+    Guardar () {
       this.guardarNuevoProducto()
     },
     Eliminar (aProd) {
-      this.eliminarProducto(aProd);
+      this.eliminarProducto(aProd)
     }
   },
   created () {
@@ -58,7 +59,6 @@ export default {
     bus.$on('nuevoProducto', nuevoProd => { this.GuardarSiValida(nuevoProd) })
     bus.$on('CambioModelo', aProd => { this.Guardar(); console.log('Cambio en modelo' + aProd) })
     bus.$on('ProductoEliminar', aProd => { this.Eliminar(aProd) })
-    
   }
 }
 </script>

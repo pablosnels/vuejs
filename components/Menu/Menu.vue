@@ -26,6 +26,7 @@ import comboCategorias from './comboCategorias'
 import Buscador from './Buscador'
 import Switches from 'vue-switches'
 import ProgresoCompra from './ProgresoCompra'
+import { mapGetters } from 'vuex'
 
 export default {
   name: 'cp-menu',
@@ -34,7 +35,8 @@ export default {
     return {
       campoBusqueda: '',
       modo: false,
-       data: this.$store.state
+      data: this.$store.state,
+      cateSelected: 0
     }
   },
   components: {
@@ -52,22 +54,26 @@ export default {
     },
     irAddCategoria (cateSelected) {
       if (cateSelected > 0) {
-        this.$router.push({ name: 'AddProductosPorCate', params: { cate: cateSelected } }) 
+        this.$router.push({name: 'AddProductosPorCate', params: { cate: cateSelected }})
       }
     }
   },
   computed: {
+    ...mapGetters({
+      categoriaActual: 'categoriaActual',
+      porcCompraActual: 'porcCompraActual',
+      totalCompra: 'totalCompra'
+    }),
     compraActual () {
-       // TODO
-      return 40 // this.ProductosOrdenados.filter(item => { return ((item.cant === 0))}).length
+      return this.porcCompraActual
     },
     compraTotal () {
-            // TODO
-      return 100 // this.ProductosOrdenados.filter(item => { return ((item.cant > 0))}).length
-    },
-    cateSelected () {return this.$store}
+      return this.totalCompra
+    }
   },
-  created () {console.log('->' + this.$store)}
+  created () {
+    this.cateSelected = this.categoriaActual
+  }
 }
 </script>
 
