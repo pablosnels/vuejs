@@ -1,40 +1,51 @@
 <template>
-  
-  <div>
-    <cp-productoCompra v-for="prod in productosFiltrados" :key='prod.desc' v-bind:producto=prod v-bind:modo=modoConsulta></cp-productoCompra>
-
-    <cp-productoCompra v-for="prod in productosYaComprados" :key='prod.desc' v-bind:producto=prod v-bind:modo=modoConsulta ></cp-productoCompra>
-  
+  <div class="container menosPadding">
+    <draggable :v-model="productosFiltrados" :options="{handle:'.handle'}" class="dragArea" @end="endDrag"  @update="onUpdate"> 
+      <cp-productoCompra v-for="prod in productosFiltrados" :key='prod.id' :producto='prod'></cp-productoCompra>
+    </draggable>
+    <cp-productoCompra v-for="prod in productosYaComprados" :key='prod.id' v-bind:producto=prod ></cp-productoCompra>
   </div>
-
-
     
 </template>
 
 <script>
 import bus from '../bus'
 import ProductoCompra from './ProductoCompra'
-import ProductoComprado from './ProductoComprado'
+import draggable from 'vuedraggable'
+import { mapActions } from 'vuex'
 
 export default {
   name: 'Listado',
   props: ['categoriaActual', 'filtro', 'productosFiltrados', 'productosYaComprados'],
   data () {
     return {
-      modoConsulta: 'C'
     }
   },
   components: {
     'cp-productoCompra': ProductoCompra,
-    'cp-productoComprado': ProductoComprado
+    draggable
   },
-  created () {
-    bus.$on('cambioModo', mod => { this.modoConsulta = mod.modo })
+  methods: {
+   ...mapActions({
+      guardarProducto: 'guardarProductoModi'
+      }),
+   checkMove (newIndex,oldIndex,element) {
+    console.log(newIndex);
+   },
+   endDrag (element)
+   {
+     var obj = { 'first': this.productosFiltrados[element.oldIndex], 'second': this.productosFiltrados[element.newIndex]}
+     this.guardarProducto(obj);
+   },
+   onUpdate () {
+    
+   }
+
   }
 }
 </script>
 
-<style scoped>
+<style scoped="true">
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -50,6 +61,14 @@ export default {
     padding: .5rem;
 }
 
+.handle {
+	  cursor: move;
+	  cursor: -webkit-grabbing;
+}
 
+.menosPadding {
+  padding-right : 5px;
+  padding-left: 5px;
+}
 
 </style>

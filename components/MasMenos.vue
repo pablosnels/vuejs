@@ -1,7 +1,7 @@
 <template lang="html">
       <div>
-          <button type="button" class="btn btn-sm btn-info" @click="onClick"><i v-bind:class= "getIconoMas" aria-hidden="true"></i></button>
-          <button type="button" class="btn btn-sm btn-info" @click="onClickMinus"><i v-bind:class= "getIconoMenos" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-sm backcolorUI" @click="onClick"><i v-bind:class= "getIconoMas" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-sm backcolorUI" @click="onClickMinus"><i v-bind:class= "getIconoMenos" aria-hidden="true"></i></button>
       </div>
 </template>
  
@@ -22,10 +22,10 @@ export default {
   },
   computed: {
     getIconoMas () {
-      return !this.flechas ? 'fa fa-plus-circle' : 'fa fa-arrow-circle-up'
+      return !this.flechas ? 'fa fa-plus-circle text-white' : 'fa fa-arrow-circle-up text-white'
     },
     getIconoMenos () {
-      return !this.flechas ? 'fa fa-minus-circle' : 'fa fa-arrow-circle-down'
+      return !this.flechas ? 'fa fa-minus-circle text-white' : 'fa fa-arrow-circle-down text-white'
     }
   }
 }

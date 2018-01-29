@@ -1,8 +1,7 @@
 <template>
-  <div id="app">
+  <div id="app" >
     <router-view> </router-view>
   </div>
-
 
 </template>
 
@@ -23,7 +22,7 @@ export default {
   methods: {
     NuevoProducto () {
       this.$router.push({
-        name: 'AddProductosPorCate',
+        name: 'AddProducto',
         params: { cate: this.$store.state.categoriaActual }
       })
     },
@@ -38,7 +37,8 @@ export default {
       cargarDatos: 'cargarDatos',
       cambiarFiltro: 'cambiarFiltro',
       eliminarProducto: 'eliminarProducto',
-      cambiarCateActual: 'cambiarCateActual'
+      cambiarCateActual: 'cambiarCateActual',
+      cambioSuper: 'cambiarSuper'
     }),
     GuardarSiValida (aProd) {
       this.guardarNuevoProducto(aProd)
@@ -53,17 +53,32 @@ export default {
   created () {
     this.cargarDatos()
     this.$router.push({ name: 'VistaPrincipal', params: { cate: 1 } })
-    bus.$on('cambioCategoria', cate => { this.CambioCategoria(parseInt(cate)) })
+    bus.$on('cambioCategoria', cate => { this.CambioCategoria(cate) })
+    bus.$on('cambioSuper', superm => { this.cambioSuper(superm) })
     bus.$on('cambiaronCantidades', totalFalta => { console.log('Se emitió un cambio de :' + totalFalta) })
     bus.$on('filtrar', filtro => { this.cambiarFiltro(filtro) })
     bus.$on('nuevoProducto', nuevoProd => { this.GuardarSiValida(nuevoProd) })
     bus.$on('CambioModelo', aProd => { this.Guardar(); console.log('Cambio en modelo' + aProd) })
     bus.$on('ProductoEliminar', aProd => { this.Eliminar(aProd) })
+
+    console.log(process.env.URL_PRODUCTOS)
+
   }
 }
 </script>
 
 
 <style >
+.colorUI {
+  color: rgb(58, 112, 211) !important; 
+}
+
+.backcolorUI {
+  background-color: rgb(58, 112, 211)  !important; 
+}
+
+.backcolorUI-dark {
+  background-color: rgb(40, 78, 150)  !important; 
+}
 
 </style>

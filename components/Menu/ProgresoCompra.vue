@@ -1,7 +1,7 @@
 <template lang="html">
    <div class="progress" style="height: 4px;">
-          <div v-bind:class=estilo role="progressbar" v-bind:style=progreso aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
+          <div v-bind:class=estilo role="progressbar" :style=progreso aria-valuenow="80" aria-valuemax="total"></div>
+  </div>
 </template>
  
 <script lang="js">
@@ -17,10 +17,10 @@ export default {
   },
   computed: {
     progreso () {
-      return 'width: ' + this.actual + '%;'
+      return 'width: ' + this.actual * 100 / (this.total? this.total : 1)  + '%;'
     },
     estilo () {
-      return this.spinner ? 'progress-bar bg-info progress-bar-striped progress-bar-animated' : 'progress-bar bg-info'
+      return this.spinner ? 'progress-bar backcolorUI progress-bar-striped progress-bar-animated' : 'progress-bar backcolorUI'
     }
   }
 }

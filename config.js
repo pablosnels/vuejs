@@ -1,11 +1,10 @@
 var config = {
-  urlProductos: 'https://api.myjson.com/bins/1frlhf',// 'https://api.myjson.com/bins/1euz3n', 
-  urlProductosGuardar: 'https://api.myjson.com/bins/1frlhf',
-  urlCategorias: 'https://api.myjson.com/bins/958ln'
+  urlProductos: 'https://api.myjson.com/bins/low3l',
+  urlCategorias: 'https://api.myjson.com/bins/11o0f5',
+  urlSupermercados: 'https://api.myjson.com/bins/1blzud',
+  urlTextoLibre: 'https://api.myjson.com/bins/xgisl',
+  urlGastos: 'https://api.myjson.com/bins/b6vax',
+  colorRegistros: '#17a2b8'
 }
 
 export default config
-
-
-// 'https://api.myjson.com/bins/7yde3'
-// 'https://api.myjson.com/bins/958ln'

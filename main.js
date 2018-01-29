@@ -6,18 +6,13 @@ import router from './router'
 import store from './store/store'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
-
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-
-import { Modal } from 'bootstrap-vue/es/components';
-
-
+import { Modal } from 'bootstrap-vue/es/components'
 
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 
-Vue.use(Modal);
-
+Vue.use(Modal)
 
 /* eslint-disable no-new */
 new Vue({

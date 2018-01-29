@@ -1,16 +1,20 @@
 <template lang="html">
-      <a  class="list-group-item list-group-item-action casiSinPadding" v-bind:class="{'bg-light' : !productoActual.cant, 'bg-light' : !productoActual.cant}">
-        <span class="badge badge-info pull-left"  @click="onClick(productoActual)" v-if="productoActual.cant">{{productoActual.cant}}</span>
-        <span v-if="productoActual.cant">
-          <strong class="text-info">{{productoActual.desc}}</strong>
-        </span>
-        <span v-else>
-          <span v-bind:class="{'font-italic' : !productoActual.cant, 'text-secondary':true}" >{{productoActual.desc}}</span>
-        </span>
-        <i class="fa fa-check-square-o text-info fa-lg pull-right" aria-hidden="true" @click="onClickTodo(productoActual)" v-if="productoActual.cant"></i>
-        <i class="fa fa-retweet text-info fa-lg pull-right" aria-hidden="true" @click="onClickReload(productoActual)" v-if="!productoActual.cant"></i>
- </a>
-      
+  <a  class="list-group-item list-group-item-action casiSinPadding " v-bind:class="{'bg-light' : !productoActual.cant, 'bg-light' : !productoActual.cant}" >
+    <i class="handle fa fa-th text-primary pull-left colorUI" aria-hidden="true" v-if="productoActual.cant"></i>
+    <span class="badge  pull-left backcolorUI text-white"  @click="onClick(productoActual)" v-if="productoActual.cant">{{productoActual.cant}}</span>
+    <span v-if="productoActual.cant">
+      <span @click="editarProducto(productoActual)" class="colorUI ">{{productoActual.desc}}</span>
+    </span>
+    <span v-else>
+      <span @click="editarProducto(productoActual)" v-bind:class="{'font-italic' : !productoActual.cant, 'font-weight-light text-muted':true}">{{productoActual.desc}} </span>
+    </span>
+    <!--i class="handle fa fa-th text-primary pull-right" aria-hidden="true" v-if="productoActual.cant"></i-->
+    <i class="fa fa-check-square-o text-primary fa-lg pull-right iconoTodo colorUI" aria-hidden="true" @click="onClickTodo(productoActual)" v-if="productoActual.cant"></i>
+    <i class="fa fa-retweet text-primary fa-lg pull-right colorUI" aria-hidden="true" @click="onClickReload(productoActual)" v-if="!productoActual.cant"></i>
+    
+    <span v-bind:class="{'badge badge-light pull-right colorUI': productoActual.precio, 'badge badge-warning pull-right': !productoActual.precio}"><em><small>€{{productoActual.precio}}</small></em></span>
+    
+  </a>
 </template>
  
 <script lang="js">
@@ -18,7 +22,7 @@ import bus from '../bus'
 
 export default {
   name: 'cp-registroCompra',
-  props: ['productoActual', 'modoVista'],
+  props: ['productoActual'],
   mounted () {
   },
   data () {
@@ -40,6 +44,9 @@ export default {
       aProd.cant = aProd.mensual
       this.$emit('clickProductoReload', aProd)
       bus.$emit('CambioModelo', aProd)
+    },
+    editarProducto (aProd) {
+      this.$router.push({ name: 'EditProduct', params: { id: aProd.id } })
     }
   },
   computed: {
@@ -57,11 +64,25 @@ export default {
 }
 
 .casiSinPadding{
-      padding: 8px 8px 0px 8px;
+      padding: 4px 7px 0px 4px;
+      padding-right: 0px;
 }
 
 .bot3em{
-      margin-bottom: .3em;
+  margin-bottom: .3em;
 }
+
+.handle {
+  margin-right: .8em;  
+  margin-left: .2em;  
+}
+
+.iconoTodo {
+  margin-right: .2em;
+}
+
+
+
+
 
 </style>

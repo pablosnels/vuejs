@@ -1,19 +1,14 @@
 <template>
   <div> 
-    <cp-menu :categorias=cates :loading=loading ></cp-menu>
-    <cp-listado v-bind:categoriaActual=cateActual v-bind:filtro=filtroActual v-bind:productosFiltrados=productosFiltrados v-bind:productosYaComprados=productosYaComprados></cp-listado>
-   
-{{getProdByDesc('Aceite')}}
-
-    <!--cp-downBar></cp-downBar-->
+    <cp-menu :categorias=cates :supermercados=supers :categoriaActual=cateActual :filtro=filtroActual v-bind:loading=loading @refresh="refresh"></cp-menu>
+    <cp-listado :categoriaActual=cateActual :filtro=filtroActual :productosFiltrados=productosFiltrados :productosYaComprados=productosYaComprados></cp-listado>
   </div>
 </template>
 
 <script>
 import Menu from './Menu/Menu'
 import Listado from './Listado/Listado'
-import Downbar from './Downbar'
-import { mapGetters } from 'vuex'
+import { mapGetters,mapActions } from 'vuex'
 
 export default {
   name: 'app',
@@ -28,6 +23,7 @@ export default {
       productosYaComprados: 'productosYaComprados',
       loading: 'loading',
       cates: 'categorias',
+      supers: 'supermercados',
       cateActual: 'categoriaActual',
       filtroActual: 'filtroActual',
       getProdByDesc: 'prodByDesc',
@@ -36,10 +32,12 @@ export default {
   },
   components: {
     'cp-menu': Menu,
-    'cp-listado': Listado,
-    'cp-downBar': Downbar
+    'cp-listado': Listado
   },
   methods: {
+    ...mapActions({
+      cargarDatos: 'cargarDatos'
+    }),
     CantidadFaltantePorCate (idCate) {
       var cant = 0
       this.productos.forEach(prod => {
@@ -48,6 +46,9 @@ export default {
         }
       })
       return cant
+    },
+    refresh (){
+      this.cargarDatos();
     }
   }
 }
